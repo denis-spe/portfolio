@@ -1,0 +1,10 @@
+
+/* Global variables */
+:root{
+    --primary-bg-color: #FAF6F6;
+    --secondary-bg-color: #020100;
+    --primary-font-size: 18px;
+    --primary-font-family: "Poppins", sans-serif;
+    --title-font-family: "Comfortaa", sans-serif;
+}
+
