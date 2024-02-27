@@ -8,3 +8,26 @@
     --title-font-family: "Comfortaa", sans-serif;
 }
 
+/* Change defaults */
+*, 
+::before, 
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Style the body tag */
+body{
+    background: var(--primary-bg-color);
+    font-size: var(--primary-font-size);
+    font-family: var(--primary-font-family);
+    height: 100vh;
+    width: 100%;
+}
+
+/* Remove the scrollbar */
+body::-webkit-scrollbar{
+    display: none;
+}
