@@ -1,0 +1,17 @@
+aside{
+  width: 100%;
+  height: 100vh;
+  background: red;
+  position: fixed;
+  display: none;
+}
+
+.close-menu-btn-container{
+  width: 100%;
+  height: var(--header-height);
+  background: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
+}
