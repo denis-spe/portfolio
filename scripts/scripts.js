@@ -1,21 +1,29 @@
 class Dataclass{
   // Get the open and close button
-  static openMenuBtn = document.querySelector("#open-menu-btn")
-  static closeMenuBtn = document.querySelector("#close-menu-btn")
+  static openMenuBtn = document.querySelector("#open-menu-btn");
+  
+  // Fetch all spans in open-menu-btn id
+  static openMenuBtnSpans = document.querySelectorAll("#open-menu-btn span");
+  
+  static closeMenuBtn = document.querySelector("#close-menu-btn");
+  
+  // Fetch all spans in close-menu-btn id
+  static closeMenuBtnSpans = document.querySelectorAll("#close-menu-btn span");
   
   // Get the aside tag
-  static aside = document.querySelector("aside")
+  static aside = document.querySelector("aside");
+  
+  // Is the menu button clicked?
+  static isMenuBtnClicked = false
 }
 
 
 
 class App{
-  // Private variable
-  #context
   
   // Constructor
   constructor(){
-    var context = this 
+    var context = this;
     
     document.addEventListener("DOMContentLoaded", function() {
       context.openMenuBtn()
@@ -29,7 +37,7 @@ class App{
    */
   openMenuBtn(){
     Dataclass.openMenuBtn.addEventListener("click", () => {
-      Dataclass.aside.style.display = "block"
+      Dataclass.aside.style.display = "block";
     })
   }
   
@@ -38,7 +46,7 @@ class App{
    */
   closeMenuBtn(){
     Dataclass.closeMenuBtn.addEventListener("click", () => {
-      Dataclass.aside.style.display = "none"
+      Dataclass.aside.style.display = "none";
     })
   }
 }
