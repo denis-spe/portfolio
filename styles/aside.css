@@ -19,7 +19,6 @@ aside{
 aside #close-menu-btn{
   width: 50px;
   height: 50px;
-  background: red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,11 +41,11 @@ aside #close-menu-btn{
   }
 }
 
-aside #close-menu-btn span{
+aside #close-menu-btn div{
   background: var(--menu-btn-line-bg);
   width: var(--menu-btn-line-width);
   height: var(--menu-btn-line-height);
-  display: block;
+  /* display: block; */
 }
 
 aside #close-menu-btn .menu-btn-line-1{
