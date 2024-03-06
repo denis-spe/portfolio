@@ -24,11 +24,13 @@ aside #close-menu-btn{
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  cursor: pointer;
   animation: rotateCloseMenuBtn 0.8s ease;
 }
 
-aside #close-menu-btn :hover{
-  animation: rotateCloseMenuBtn 0.8s ease;
+#close-menu-btn:hover{
+  transform: rotate(360deg);
+  transition: transform 0.8s ease;
 }
 
 @keyframes rotateCloseMenuBtn{

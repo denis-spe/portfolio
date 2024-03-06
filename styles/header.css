@@ -22,29 +22,22 @@ header .main-title-container h1{
 header #open-menu-btn{
   width: 50px;
   height: 50px;
-  background: red;
+  /* background: red; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  gap: 5px;
+  cursor: pointer;
 }
 
-header #open-menu-btn:active .menu-btn-line-1{
-  animation: move-menu-btn-line-1 1s ease;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  
+header #open-menu-btn .menu-btn-line-1{
+  display: none;
 }
 
-@keyframes move-menu-btn-line-1{
-  
-  to {
-    background: black;
-  }
-  
-  from{
-    background: yellowgreen;
-  }
+header #open-menu-btn:hover .menu-btn-line-1{
+  display: block;
+  height: var(--menu-btn-line-height);
 }
 
 header #open-menu-btn span{
@@ -55,10 +48,10 @@ header #open-menu-btn span{
 }
 
 header #open-menu-btn .menu-btn-line-1{
-  margin-bottom: 4px;
+  height: 3px;
 }
 
-header #open-menu-btn .menu-btn-line-3{
-  margin-top: 4px;
-}
+/* header #open-menu-btn .menu-btn-line-3{
+  height: 3px;
+} */
 
