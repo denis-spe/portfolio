@@ -1,15 +1,33 @@
 aside{
   width: 100%;
   height: 100vh;
+  /* border-radius: 50px; */
   background: red;
-  position: fixed;
-  display: none;
+  position: relative;
+  float: right;
+  /* animation: animate-aside 1s linear 1s; */
 }
 
-.close-menu-btn-container{
+@keyframes animate-aside {
+  0%{
+    float: right;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+  }
+
+  50%{
+    position: relative;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
+aside .close-menu-btn-container{
   width: 100%;
   height: var(--header-height);
-  background: yellow;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -24,12 +42,31 @@ aside #close-menu-btn{
   align-items: center;
   flex-flow: column;
   cursor: pointer;
-  animation: rotateCloseMenuBtn 0.8s ease;
+  background: orange;
+  animation: rotateCloseMenuBtn 0.8s ease 0.1ms;
 }
 
-#close-menu-btn:hover{
+
+aside #close-menu-btn:hover{
   transform: rotate(360deg);
-  transition: transform 0.8s ease;
+  transition: 0.8s ease 0.1ms; 
+}
+
+aside #close-menu-btn div{
+  width: var(--menu-btn-line-width);
+  height: var(--menu-btn-line-height);
+  background: var(--menu-btn-line-bg);
+}
+
+aside #close-menu-btn .menu-bar-1{
+  transform: rotate(40deg);
+  position: relative;
+  top: 2px;
+}
+
+aside #close-menu-btn .menu-bar-2{
+  transform: rotate(-40deg);
+  bottom: 2px;
 }
 
 @keyframes rotateCloseMenuBtn{
@@ -41,19 +78,4 @@ aside #close-menu-btn{
   }
 }
 
-aside #close-menu-btn div{
-  background: var(--menu-btn-line-bg);
-  width: var(--menu-btn-line-width);
-  height: var(--menu-btn-line-height);
-  /* display: block; */
-}
 
-aside #close-menu-btn .menu-btn-line-1{
-  transform: rotate(40deg);
-  position: relative;
-  top: 2px;
-}
-
-aside #close-menu-btn .menu-btn-line-2 {
-  transform: rotate(-40deg);
-}
