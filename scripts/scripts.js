@@ -38,6 +38,9 @@ class App{
   openMenuBtn(){
     Dataclass.openMenuBtn.addEventListener("click", () => {
       Dataclass.aside.style.display = "block";
+      setInterval(() => {
+        Dataclass.closeMenuBtn.style.display = "flex";
+      }, 500)
     })
   }
   
