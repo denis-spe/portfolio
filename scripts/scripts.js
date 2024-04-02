@@ -18,6 +18,9 @@ class Dataclass {
 
   // Main title
   static mainTitle = document.querySelector(".main-title-container");
+
+  // Aside contents
+  static asideContents = document.querySelector(".aside-contents")
 }
 
 
@@ -44,7 +47,10 @@ class App {
     Dataclass.mainTitle.style.display = "none";
     
     Dataclass.openMenuBtn.classList.remove("show-menu-btn");
-    Dataclass.openMenuBtn.classList.add("close-menu-btn");
+    setTimeout(() => {
+      Dataclass.openMenuBtn.classList.add("close-menu-btn");
+      Dataclass.asideContents.style.display = 'flex'
+    }, 100);
 
     // Remove the close aside class from aside tag.
     Dataclass.aside.classList.remove('close-aside')
@@ -67,6 +73,7 @@ class App {
     
     Dataclass.openMenuBtn.classList.remove("close-menu-btn");
     Dataclass.openMenuBtn.classList.add("show-menu-btn");
+    Dataclass.asideContents.style.display = 'none'
 
     // Remove open aside class from aside tag.
     Dataclass.aside.classList.remove('open-aside')

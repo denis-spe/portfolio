@@ -8,7 +8,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 10px 0px 10px;
-  z-index: 1;
+  z-index: 2;
 }
 
 header div {
@@ -29,7 +29,15 @@ header .main-title-container h1{
   flex-flow: column;
   gap: 5px;
   cursor: pointer;
-  background: red;
+}
+
+.close-menu-btn{
+  transform: rotate(360deg);
+  transition: transform 0.5s linear 0.01s;
+}
+
+.close-menu-btn:hover{
+  animation: rotateMenuBtn 0.5s linear 0.01s;
 }
 
 .show-menu-btn .menu-btn-line-1{
@@ -60,15 +68,19 @@ header .main-title-container h1{
 }
 
 .close-menu-btn .menu-btn-line-2{
-  transform: rotate(200deg);
+  transform: translate(0px, 4px) rotate(220deg);
 }
 
 .close-menu-btn .menu-btn-line-3{
-  transform: translate(0px, 3px) rotate(-250deg);
+  transform: translate(0px, -3px) rotate(-220deg);
 }
 
+@keyframes rotateMenuBtn {
+  0%{
+    transform: rotate(0deg);
+  }
 
-/* header #open-menu-btn .menu-btn-line-3{
-  height: 3px;
-} */
-
+  100%{
+    transform: rotate(360deg);
+  }
+}
