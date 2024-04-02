@@ -8,6 +8,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 10px 0px 10px;
+  z-index: 1;
 }
 
 header div {
@@ -19,37 +20,53 @@ header .main-title-container h1{
   font-family: var(--title-font-family);
 }
 
-header #open-menu-btn{
+.show-menu-btn, .close-menu-btn{
   width: 50px;
   height: 50px;
-  /* background: red; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   gap: 5px;
   cursor: pointer;
+  background: red;
 }
 
-header #open-menu-btn .menu-btn-line-1{
+.show-menu-btn .menu-btn-line-1{
   display: none;
 }
 
-header #open-menu-btn:hover .menu-btn-line-1{
+.show-menu-btn:hover .menu-btn-line-1{
   display: block;
   height: var(--menu-btn-line-height);
 }
 
-header #open-menu-btn div{
+.show-menu-btn div{
   background: var(--menu-btn-line-bg);
   width: var(--menu-btn-line-width);
   height: var(--menu-btn-line-height);
   display: block;
 }
 
-header #open-menu-btn .menu-btn-line-1{
-  height: 3px;
+.close-menu-btn .menu-btn-line-1{
+  display: none;
 }
+
+.close-menu-btn div{
+  background: var(--menu-btn-line-bg);
+  width: var(--menu-btn-line-width);
+  height: var(--menu-btn-line-height);
+  display: block;
+}
+
+.close-menu-btn .menu-btn-line-2{
+  transform: rotate(200deg);
+}
+
+.close-menu-btn .menu-btn-line-3{
+  transform: translate(0px, 3px) rotate(-250deg);
+}
+
 
 /* header #open-menu-btn .menu-btn-line-3{
   height: 3px;
