@@ -2,10 +2,10 @@ aside{
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(8px);
-  -moz-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  background: var(--aside-header-bg);
+  -webkit-backdrop-filter: var(--aside-blur);
+  -moz-backdrop-filter: var(--aside-blur);
+  backdrop-filter: var(--aside-blur);
   position: absolute;
   margin: auto;
   right: 0;
@@ -62,13 +62,12 @@ aside{
 
 .aside-contents > ul a{
   text-decoration: none;
-  color: var(--primary-bg-color);
 }
 
 .aside-contents > ul a::after{
   content: "";
   height: 0.1em;
-  background: var(--primary-bg-color);
+  background: var(--primary-color);
   display: block;
   width: 100%;
   opacity: 0;
@@ -92,6 +91,25 @@ aside{
   transform: scale(1);
 }
 
+
+.praise{
+  width: 80%;
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.praise h1{
+  font-size: 15px;
+  font-family: serif;
+}
 
 
 

@@ -3,6 +3,8 @@
 :root{
     --primary-bg-color: #FAF6F6;
     --secondary-bg-color: #020100;
+    --primary-color: #000;
+    --secondary-color: #fff;
     --primary-font-size: 18px;
     --primary-font-family: "Poppins", sans-serif;
     --title-font-family: "Comfortaa", sans-serif;
@@ -12,6 +14,10 @@
     --menu-btn-line-width: 20px;
     --menu-btn-line-height: 2px;
     --menu-btn-line-bg: #202020;
+    --aside-bg: rgba(255, 255, 255, 0.2);
+    --aside-blur: blur(8px);
+    --header-bg: linear-gradient(360deg, rgba(255, 255, 255, 0) 30%, rgba(250, 250, 250, 0.5) 100%);
+    --header-blur: blur(2px);
 }
 
 /* Change defaults */
@@ -21,6 +27,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--primary-color);
 }
 
 

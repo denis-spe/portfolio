@@ -2,13 +2,14 @@
 header {
   width: 100%;
   height: var(--header-height);
-  background-color: aquamarine;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 10px 0px 10px;
   z-index: 2;
+  background: var(--header-bg);
+  backdrop-filter: var(--header-blur);
 }
 
 header div {
@@ -33,12 +34,12 @@ header .main-title-container h1{
 
 .close-menu-btn{
   transform: rotate(360deg);
-  transition: transform 0.5s linear 0.01s;
+  transition: transform 500ms ease 5ms;
 }
 
-.close-menu-btn:hover{
+/*.close-menu-btn:hover{
   animation: rotateMenuBtn 0.5s linear 0.01s;
-}
+}*/
 
 .show-menu-btn .menu-btn-line-1{
   display: none;

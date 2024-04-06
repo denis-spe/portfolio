@@ -58,7 +58,8 @@ class App {
   closeAsideMenu() {
     Dataclass.header.style = `
     justify-content: space-between;
-    background: aquamarine;
+    background: var(--header-bg);
+    backdrop-filter: var(--header-blur);
     `
     Dataclass.mainTitle.style.display = "block";
     
