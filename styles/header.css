@@ -9,13 +9,15 @@ header {
   padding: 0px 10px 0px 10px;
   z-index: 2;
   background: var(--header-bg);
+  -webkit-backdrop-filter: var(--header-blur);
   backdrop-filter: var(--header-blur);
+  /* filter: var(--header-blur); */
 }
 
-header div {
+/* header div {
   width: max-content;
   height: max-content;
-}
+} */
 
 header .main-title-container h1{
   font-family: var(--title-font-family);
@@ -37,9 +39,9 @@ header .main-title-container h1{
   transition: transform 500ms ease 5ms;
 }
 
-/*.close-menu-btn:hover{
-  animation: rotateMenuBtn 0.5s linear 0.01s;
-}*/
+/* .close-menu-btn:hover{
+  animation: rotateMenuBtn 500ms ease 5ms;
+} */
 
 .show-menu-btn .menu-btn-line-1{
   display: none;
@@ -48,6 +50,7 @@ header .main-title-container h1{
 .show-menu-btn:hover .menu-btn-line-1{
   display: block;
   height: var(--menu-btn-line-height);
+  
 }
 
 .show-menu-btn div{
@@ -69,19 +72,21 @@ header .main-title-container h1{
 }
 
 .close-menu-btn .menu-btn-line-2{
-  transform: translate(0px, 4px) rotate(220deg);
+  transform: translate(0px, 0px) rotate(220deg);
+  position: fixed;
 }
 
 .close-menu-btn .menu-btn-line-3{
-  transform: translate(0px, -3px) rotate(-220deg);
+  position: fixed;
+  transform: translate(0px, 0px) rotate(-220deg);
 }
 
 @keyframes rotateMenuBtn {
   0%{
-    transform: rotate(0deg);
+    transform: rotateZ(0deg);
   }
 
   100%{
-    transform: rotate(360deg);
+    transform: rotateZ(360deg);
   }
 }

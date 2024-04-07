@@ -2,10 +2,6 @@ aside{
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  background: var(--aside-header-bg);
-  -webkit-backdrop-filter: var(--aside-blur);
-  -moz-backdrop-filter: var(--aside-blur);
-  backdrop-filter: var(--aside-blur);
   position: absolute;
   margin: auto;
   right: 0;
@@ -14,6 +10,9 @@ aside{
   top: 0;
   display: none;
   z-index: 1;
+  background: var(--aside-bg);
+  /* -webkit-backdrop-filter: var(--aside-blur); */
+  /* backdrop-filter: var(--aside-blur); */
 }
 
 /**
@@ -93,15 +92,15 @@ aside{
 
 
 .praise{
-  width: 80%;
+  width: 100%;
   height: 10vh;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   right: 0;
   left: 0;
   margin: auto;
   z-index: 3;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }

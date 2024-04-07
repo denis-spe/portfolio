@@ -13,6 +13,7 @@ class Dataclass {
 
   // Aside contents
   static asideContents = document.querySelector(".aside-contents")
+  static praise = document.querySelector(".praise") // In aside
 }
 
 
@@ -41,6 +42,7 @@ class App {
     setTimeout(() => {
       Dataclass.menuBtn.classList.add("close-menu-btn");
       Dataclass.asideContents.style.display = 'flex'
+      Dataclass.praise.style.display = 'flex'
     }, 100);
 
     // Remove the close aside class from aside tag.
@@ -66,6 +68,7 @@ class App {
     Dataclass.menuBtn.classList.remove("close-menu-btn");
     Dataclass.menuBtn.classList.add("show-menu-btn");
     Dataclass.asideContents.style.display = 'none'
+    Dataclass.praise.style.display = 'none'
 
     // Remove open aside class from aside tag.
     Dataclass.aside.classList.remove('open-aside')
