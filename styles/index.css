@@ -58,8 +58,15 @@ body{
 
 
 @media (prefers-color-scheme: dark) {
-  .dark-color {
-    color: #fff !important;
-    background: #1F2223;
-  }
+    :root {
+    --primary-bg-color: #1F2223;
+    --secondary-bg-color: #FAF6F6;
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --menu-btn-line-bg: #fff !important;
+    }
+
+    #logo {
+        content: url("../images/dark-logo.svg");
+    }
 }
