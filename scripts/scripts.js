@@ -9,7 +9,7 @@ class Dataclass {
   static header = document.querySelector("header");
 
   // Main title
-  static mainTitle = document.querySelector(".main-title-container");
+  static mainTitle = document.querySelector(".header-title-container");
 
   // Aside contents
   static asideContents = document.querySelector(".aside-contents")
@@ -63,7 +63,7 @@ class App {
     background: var(--header-bg);
     backdrop-filter: var(--header-blur);
     `
-    Dataclass.mainTitle.style.display = "block";
+    Dataclass.mainTitle.style.display = "flex";
     
     Dataclass.menuBtn.classList.remove("close-menu-btn");
     Dataclass.menuBtn.classList.add("show-menu-btn");

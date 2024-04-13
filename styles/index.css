@@ -14,7 +14,7 @@
     --menu-btn-height: 40px;
     --menu-btn-line-width: 20px;
     --menu-btn-line-height: 2px;
-    --menu-btn-line-bg: #202020;
+    --menu-btn-line-bg: #000;
     --aside-bg: rgb(20, 123, 182);
     --aside-blur: blur(50px);
     --header-bg: rgba(255, 255, 255, 0.2);
@@ -54,4 +54,12 @@ body{
 
 ::-webkit-scrollbar-corner{
     background-color: #202020;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .dark-color {
+    color: #fff !important;
+    background: #1F2223;
+  }
 }

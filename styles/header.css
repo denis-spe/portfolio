@@ -14,13 +14,18 @@ header {
   /* filter: var(--header-blur); */
 }
 
-/* header div {
-  width: max-content;
-  height: max-content;
-} */
+.header-title-container{
+  display: flex;
+  align-items: center;
+}
 
-header .main-title-container h1{
+.header-title-container h1{
   font-family: var(--title-font-family);
+}
+
+
+.menu-btn-container{
+  -webkit-tap-highlight-color: transparent;
 }
 
 .show-menu-btn, .close-menu-btn{
