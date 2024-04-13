@@ -11,8 +11,8 @@ aside{
   display: none;
   z-index: 1;
   background: var(--aside-bg);
-  /* -webkit-backdrop-filter: var(--aside-blur); */
-  /* backdrop-filter: var(--aside-blur); */
+  /* -webkit-backdrop-filter: var(--aside-blur); 
+  backdrop-filter: var(--aside-blur); */
 }
 
 /**
@@ -107,7 +107,23 @@ aside{
 
 .praise h1{
   font-size: 15px;
-  font-family: serif;
+  font-family: "Caveat", cursive;
+  color: gold;
+}
+
+.praise #holy-word{
+  stroke-dasharray: 1018;
+    stroke-dashoffset: 10;
+  /* width: 100vw;
+  height: 3vw;
+  animation: dash 5s linear forwards; */
+}
+
+@keyframes dash {
+  to {
+    stroke-dasharray: 1018.9398193359375;
+    stroke-dashoffset: 1000;
+  }
 }
 
 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
 /* Global variables */
 :root{
@@ -14,7 +15,7 @@
     --menu-btn-line-width: 20px;
     --menu-btn-line-height: 2px;
     --menu-btn-line-bg: #202020;
-    --aside-bg: rgb(228, 232, 198);
+    --aside-bg: rgb(20, 123, 182);
     --aside-blur: blur(50px);
     --header-bg: rgba(255, 255, 255, 0.2);
     --header-blur: blur(2px);
@@ -31,6 +32,8 @@
 }
 
 
+
+
 /* Style the body tag */
 body{
     background: var(--primary-bg-color);
@@ -40,18 +43,15 @@ body{
     width: 100%;
 }
 
-/* Remove the scrollbar */
-body::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    /* background: transparent;  Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
--ms-overflow-style: none;  /* IE and Edge */
-scrollbar-width: none;  /* Firefox */
+::-webkit-scrollbar-corner{
+    background-color: #202020;
 }
