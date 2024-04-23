@@ -17,6 +17,18 @@ class Dataclass {
 }
 
 
+/**
+ * Animate the list element
+ */
+function animateLi(element, delay, dur){
+  element.style = `
+  animation-name: animate-li-element;
+  animation-timing-function: ease;
+  animation-duration: ${dur}ms;
+  animation-fill-mode: forwards;
+  animation-delay: ${delay}ms;
+  `
+}
 
 class App {
 
@@ -34,6 +46,10 @@ class App {
     justify-content: end;
     background: none;
     `
+    const li = document.querySelectorAll("aside li")
+    li.forEach((item, index) => {
+      animateLi(item, index * 100, index * 20)
+    })
 
     // Hide the main title
     Dataclass.mainTitle.style.display = "none";
