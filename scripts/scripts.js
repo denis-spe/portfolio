@@ -48,7 +48,10 @@ class App {
     `
     const li = document.querySelectorAll("aside li")
     li.forEach((item, index) => {
-      animateLi(item, index * 100, index * 20)
+      if (index == 0)
+         animateLi(item, (index + 0.2) * 100, index * 20);
+      else
+        animateLi(item, index * 100, index * 20);
     })
 
     // Hide the main title

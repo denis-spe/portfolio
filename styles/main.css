@@ -3,7 +3,6 @@ main{
     width: 100%;
     height: 100vh;
     z-index: -1;
-    
 }
 
 .intro-section{
@@ -24,4 +23,29 @@ main{
     left: 0;
     font-size: 25px;
     padding-left: 10px;
+}
+
+/*
+ Create a design.
+*/
+.circle {
+  width: 70%;
+  height: 40vh;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  background: linear-gradient(
+          360deg, transparent 20%, lightgrey 50%);
+  margin: auto;
+}
+
+.circle-1{
+  position: absolute;
+  right: 100px;
+  background: linear-gradient(
+          360deg, transparent 20%, lightgrey 50%);
 }

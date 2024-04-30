@@ -59,10 +59,14 @@ aside{
   list-style: none;
 }
 
+.aside-contents > ul li {
+  margin-bottom: 10px;
+}
+
 .aside-contents > ul a{
   text-decoration: none;
   font-family: var(--title-font-family);
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .aside-contents > ul a::after{
