@@ -28,24 +28,19 @@ main{
 /*
  Create a design.
 */
-.circle {
-  width: 70%;
-  height: 40vh;
-  display: block;
-  position: absolute;
-  border-radius: 100%;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
+.design-container {
+  width: 100%;
+  height: 100vh;
   z-index: -1;
-  background: linear-gradient(
-          360deg, transparent 20%, lightgrey 50%);
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.circle-1{
-  position: absolute;
-  right: 100px;
-  background: linear-gradient(
-          360deg, transparent 20%, lightgrey 50%);
+.square{
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  border-radius: 5px;
 }
