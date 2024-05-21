@@ -128,12 +128,17 @@ class App {
     }
   }
 
+  isMobile() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+  }
+
   trackMouseMovement() {
     let animationFrame; // Declare animationFrame within the function
 
-    document.addEventListener("mousemove", (e) => {
-      const x = e.clientX;
-      const y = e.clientY;
+    document.addEventListener(this.isMobile() ? "touchmove" : "mousemove", (e) => {
+      const x = this.isMobile() ? e.touches[0].clientX : e.clientX;
+      const y = this.isMobile() ? e.touches[0].clientY : e.clientY;
 
       const squares = document.querySelectorAll(".square");
 
@@ -177,7 +182,7 @@ class App {
       });
     });
 
-    document.addEventListener("mouseleave", () => {
+    document.addEventListener(this.isMobile() ? "touchend" :"mouseleave", () => {
       cancelAnimationFrame(animationFrame);
       const squares = document.querySelectorAll(".square");
       squares.forEach((square) => {
