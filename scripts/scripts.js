@@ -19,6 +19,7 @@ class Dataclass {
   static designContainer = document.querySelector(".design-container");
 }
 
+
 /**
  * Animate the list element
  */
@@ -41,6 +42,7 @@ class App {
       context.MenuBtn();
       context.background();
       context.trackMouseMovement();
+      context.fields()
     });
   }
 
@@ -193,6 +195,25 @@ class App {
         square.style.opacity = 1;
       });
     });
+  }
+
+  fields(){
+    let subjects = ["Data science", "Web development", "Mobile development"]
+    var idx = 0;
+    const subject = document.getElementById("subject");
+    // subject.textContent = subjects[idx];
+
+    function updateText(){
+      if (idx >= subjects.length) {
+        idx = 0;
+      }
+      subject.textContent = subjects[idx];
+      subject.dataset.subject = subjects[idx];
+      idx++
+    }
+
+    subject.onanimationiteration = updateText;
+  
   }
 }
 

@@ -11,7 +11,7 @@ main{
 }
 
 .intro-contents{
-    width: 80%;
+    width: 85%;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -21,8 +21,19 @@ main{
     top: 0;
     bottom: 0;
     left: 0;
+    right: 0;
     font-size: 25px;
     padding-left: 10px;
+    /* background-color: aqua; */
+    border-image: linear-gradient(to right, rgb(229, 29, 29), rgb(52, 123, 223), rgb(83, 236, 114)) 1;
+    border-image-slice: 1;
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-top: none;
+}
+
+#hi{
+  font-size: 69px;
 }
 
 /*
@@ -44,3 +55,54 @@ main{
   margin: 2px;
   border-radius: 5px;
 }
+
+/**
+ * Subject
+ */
+
+#subject{
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: animate-field 2s ease 1s infinite;
+}
+
+#subject[data-subject="Data science"]{
+  color: rgb(229, 29, 29);
+}
+
+#subject[data-subject="Web development"]{
+  color: rgb(52, 123, 223);
+}
+
+#subject[data-subject="Mobile development"]{
+  color: rgb(83, 236, 114);
+}
+
+
+@keyframes animate-field{
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  50% {
+    display: inline-block;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  75% {
+    display: inline-block;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
