@@ -41,8 +41,7 @@ class App {
     document.addEventListener("DOMContentLoaded", function () {
       context.MenuBtn();
       context.background();
-      context.trackMouseMovement();
-      context.fields()
+      context.fields();
     });
   }
 
