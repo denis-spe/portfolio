@@ -4,8 +4,8 @@
 :root{
     --primary-bg-color: #FAF6F6;
     --secondary-bg-color: #020100;
-    --primary-color: #000;
-    --secondary-color: #fff;
+    --primary-color: #fff;
+    --secondary-color: #000;
     --primary-font-size: 18px;
     --primary-font-family: "Poppins", sans-serif;
     --title-font-family: "Comfortaa", sans-serif;
@@ -14,10 +14,15 @@
     --menu-btn-height: 40px;
     --menu-btn-line-width: 20px;
     --menu-btn-line-height: 2px;
-    --menu-btn-line-bg: #000;
-    --aside-bg: rgb(20, 123, 182);
+    --menu-btn-line-bg: #fff;
+    --aside-bg: linear-gradient(
+      to top right,
+      rgba(70, 122, 248, 1),
+      rgba(46, 103, 255, 1),
+      rgba(65, 75, 186, 1)
+    );
     --aside-blur: blur(50px);
-    --header-bg: rgba(255, 255, 255, 0.2);
+    --header-bg: none;
     --header-blur: blur(2px);
 }
 

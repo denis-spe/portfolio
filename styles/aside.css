@@ -11,7 +11,14 @@ aside{
   display: none;
   z-index: 1;
   background: var(--aside-bg);
-  /* -webkit-backdrop-filter: var(--aside-blur); 
+  /*
+  background: linear-gradient(
+      to top right,
+      rgba(70, 122, 248, 1),
+      rgba(46, 103, 255, 1),
+      rgba(65, 75, 186, 1)
+  );
+  -webkit-backdrop-filter: var(--aside-blur); 
   backdrop-filter: var(--aside-blur); */
 }
 

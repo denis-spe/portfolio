@@ -60,6 +60,7 @@ header {
 
 .show-menu-btn div{
   background: var(--menu-btn-line-bg);
+  color: #fff;
   width: var(--menu-btn-line-width);
   height: var(--menu-btn-line-height);
   display: block;
