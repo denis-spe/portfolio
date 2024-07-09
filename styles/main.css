@@ -143,18 +143,18 @@ main{
 #subject{
   display: inline-block;
   opacity: 0;
-  color: rgba(8, 189, 116, 1);
+  color: rgba(8, 230, 116, 1);
   font-size: 20px;
   transform: translateY(30px);
   animation: animate-field 2s ease 0.1s infinite;
 }
 
 #subject[data-subject="Data science"]{
-  color: rgba(255, 111, 202, 1);
+  color: rgba(255, 201,200, 1);
 }
 
 #subject[data-subject="Web development"]{
-  color: rgba(8, 189, 116, 1);
+  color: rgba(8, 230, 116, 1);
 }
 
 #subject[data-subject="Mobile development"]{
