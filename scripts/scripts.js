@@ -1,3 +1,5 @@
+let {log} = console
+
 class Dataclass {
   // Get the open and close button
   static menuBtn = document.querySelector("#menu-btn");

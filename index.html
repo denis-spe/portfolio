@@ -3,16 +3,17 @@
 
 <head>
   <!-- Meta tag -->
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <meta name="color-scheme" content="light dark" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
 
   <!-- styles links -->
-  <link rel="stylesheet" href="./styles/index.css" >
-  <link rel="stylesheet" href="./styles/header.css" >
-  <link rel="stylesheet" href="./styles/aside.css" >
-  <link rel="stylesheet" href="./styles/main.css" >
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/aside.css">
+  <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
   <!-- font family link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -95,25 +96,38 @@
       </div>
     </section>
     <section class="project-section">
-      <p>Here are some of the projects in progress</p>
-      <div class="web-dev-container">
-        <h2>Web development</h2>
-        <div class="static-web-container">
-          <h3>Static website</h3>
-          <figure>
-            <a href="https://github.com/denis-spe/portfolio">
-              <img src="/images/logo.svg" alt="logo">
-            </a>
-            <figcaption>Portfolio</figcaption>
-          </figure>
-        </div>
-        <div class="py-project-container">
-          <h3>Python web development</h3>
-          <div class="flask-container">
-            <h4>Flask</h4>
+      <div class="main-pro-container">
+        <div class="pro-container">
+          <div class="web-dev-title-container">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-square-js"></i>
+            <h2>Web development</h2>
           </div>
-          <div class="dj-container">
-            <h4>Django</h4>
+          <div class="inner-pro-container">
+            <h3>Static website</h3>
+            <dl>
+              <dt>
+                <figure>
+                  <a href="https://github.com/denis-spe/portfolio">
+                    <img src="/images/logo.svg" alt="logo" width="40">
+                  </a>
+                  <figcaption>Portfolio</figcaption>
+                </figure>
+              </dt>
+              <dd>
+                My static portfolio web page
+              </dd>
+            </dl>
+          </div>
+          <div class="pro-container">
+            <h3>Python</h3>
+            <div class="flask-container">
+              <h4>Flask</h4>
+            </div>
+            <div class="dj-container">
+              <h4>Django</h4>
+            </div>
           </div>
         </div>
       </div>
@@ -124,6 +138,7 @@
   <footer></footer>
 
   <!-- Javascript source -->
+  <script src="https://kit.fontawesome.com/62b25911ae.js" crossorigin="anonymous"></script>
   <script src="./scripts/scripts.js"></script>
 </body>
 
