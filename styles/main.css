@@ -219,7 +219,6 @@ main{
 }
 
 .main-pro-container{
-  background: red;
   width: 90vw;
   height: 80%;
   margin: auto;
@@ -235,10 +234,18 @@ main{
 
 .inner-pro-container dl {
   display: flex;
-  background: navajowhite;
+  background: linear-gradient(
+  to top right,
+  rgba(255, 255, 255, 0.3),
+  rgba(240, 240, 240, 0.3)
+  );
   align-items: center;
+  border-radius: 15px;
 }
 
+.inner-pro-container dd {
+  font-size: 15px;
+}
 
 .inner-pro-container dt figure{
   width: 100px;
