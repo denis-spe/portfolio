@@ -1,6 +1,7 @@
 :root{
   --icon-background: rgba(70, 122, 248, 1);
   --icon-box-shadow: inset 1px 1px gray;
+  --lang-icon-color: #fff;
 }
 
 /* Main tag */
@@ -228,16 +229,16 @@ main{
   margin-top: 20px;
 }
 
-.pro-container h2{
-  font-size: 22px;
-}
 
 .inner-pro-container dl {
+  width: 200px;
+  height: 200px;
   display: flex;
+  flex-direction: column;
   background: linear-gradient(
   to top right,
-  rgba(255, 255, 255, 0.3),
-  rgba(240, 240, 240, 0.3)
+  rgba(181, 180, 180, 0.3),
+  rgba(33, 33, 33, 0.2)
   );
   align-items: center;
   border-radius: 15px;
@@ -245,11 +246,16 @@ main{
 
 .inner-pro-container dd {
   font-size: 15px;
+  display: block;
+  width: 70%;
+  margin-bottom: 7px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .inner-pro-container dt figure{
   width: 100px;
-  height: 100px;
+  height: 91px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -257,20 +263,21 @@ main{
   align-items: center;
 }
 
-.web-dev-title-container{
-  display: flex;
-  justify-content: start;
-  align-content: center;
-  gap: 2px;
-  padding: 5px;
-  height: 40px;
+.inner-pro-container figure img{
+  border-radius: 50%;
 }
 
-.web-dev-title-container i{
-  padding: 4px 2px;
+.inner-pro-container dd img{
+  color: white;
 }
 
-.web-dev-title-container > h2 {
-  font-size: 18px
+.pro-title-container h2{
+  font-weight: 200;
+  margin-bottom: 8px;
+}
+
+.pro-content-container{
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
