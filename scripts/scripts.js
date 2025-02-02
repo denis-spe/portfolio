@@ -1,4 +1,7 @@
-let {log} = console
+import { projectData } from './projectData.js';
+
+
+let { log } = console
 
 class Dataclass {
   // Get the open and close button
@@ -40,10 +43,11 @@ class App {
   constructor() {
     var context = this;
 
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
       context.MenuBtn();
       context.background();
       context.fields();
+      context.addProjectItems()
     });
   }
 
@@ -185,7 +189,7 @@ class App {
       });
     });
 
-    document.addEventListener(this.isMobile() ? "touchend" :"mouseleave", () => {
+    document.addEventListener(this.isMobile() ? "touchend" : "mouseleave", () => {
       cancelAnimationFrame(animationFrame);
       const squares = document.querySelectorAll(".square");
       squares.forEach((square) => {
@@ -198,13 +202,13 @@ class App {
     });
   }
 
-  fields(){
+  fields() {
     let subjects = ["Data science", "Web development", "Mobile development"]
     var idx = 0;
     const subject = document.getElementById("subject");
     // subject.textContent = subjects[idx];
 
-    function updateText(){
+    function updateText() {
       if (idx >= subjects.length) {
         idx = 0;
       }
@@ -214,7 +218,23 @@ class App {
     }
 
     subject.onanimationiteration = updateText;
-  
+
+  }
+
+  addProjectItems() {
+    fetch("data.json")
+      .then(reponse => reponse.json())
+      .then(data => {
+        data.forEach(it => {
+          projectData(
+            it["title"],
+            it["imgPath"],
+            it["durationLink"],
+            it["description"],
+            it["iconsPath"]
+          )
+        })
+      })
   }
 }
 

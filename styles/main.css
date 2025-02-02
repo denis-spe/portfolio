@@ -225,13 +225,18 @@ main{
   margin: auto;
 }
 
-.project-section .pro-container{
-  margin-top: 20px;
+.pro-content-container a{
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
+.inner-pro-container{
+  padding-bottom: 12px;
+}
 
 .inner-pro-container dl {
-  width: 200px;
+  width: 88%;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -253,8 +258,12 @@ main{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.inner-pro-container dd img {
+  margin: 1px;
+}
+
 .inner-pro-container dt figure{
-  width: 100px;
+  width: 10px;
   height: 91px;
   display: flex;
   flex-flow: column;
@@ -267,9 +276,11 @@ main{
   border-radius: 50%;
 }
 
+/*
 .inner-pro-container dd img{
   color: white;
 }
+*/
 
 .pro-title-container h2{
   font-weight: 200;
@@ -280,4 +291,3 @@ main{
   display: grid;
   grid-template-columns: auto auto;
 }
-

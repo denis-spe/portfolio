@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Portfolio",
+    "imgPath": "./images/logo.svg",
+    "durationLink": "https://github.com/denis-spe/portfolio",
+    "description": "A static website using only html, css and javascript",
+    "iconsPath": [
+        "./images/fontawesome-free-6.5.1-web/svgs/brands/html5.svg",
+        "./images/fontawesome-free-6.5.1-web/svgs/brands/css3.svg",
+        "./images/fontawesome-free-6.5.1-web/svgs/brands/js.svg"
+      ]
+  },
+  {
+  "title": "AdventOfCode",
+  "imgPath": "./images/advent.png",
+  "durationLink": "https://github.com/denis-spe/portfolio",
+  "description": "Solving 2015 advent of code puzzle using java",
+  "iconsPath": [
+        "./images/fontawesome-free-6.5.1-web/svgs/brands/java.svg"
+      ]
+ }
+]
