@@ -34,6 +34,7 @@ class ProjectData {
     const dd = document.createElement("dd")
     dd.innerText = this.description ?? ""
     const iconDd = document.createElement("dd")
+    iconDd.setAttribute("class", "icons-dd")
     this.iconsPath.forEach(path => {
       const iconImg = document.createElement("img");
       iconImg.src = path

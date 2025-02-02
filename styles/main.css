@@ -264,7 +264,7 @@ main{
 
 .inner-pro-container dt figure{
   width: 10px;
-  height: 91px;
+  margin: 15px 0px 5px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -276,11 +276,16 @@ main{
   border-radius: 50%;
 }
 
-/*
-.inner-pro-container dd img{
-  color: white;
+.inner-pro-container figure figcaption{
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 6px;
 }
-*/
+
+.inner-pro-container .icons-dd{
+  margin: 8px 0px;
+  align-items: center;
+}
 
 .pro-title-container h2{
   font-weight: 200;
