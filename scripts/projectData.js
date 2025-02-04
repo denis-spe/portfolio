@@ -38,7 +38,6 @@ class ProjectData {
     this.iconsPath.forEach(path => {
       const iconImg = document.createElement("img");
       iconImg.src = path
-      iconImg.width = "17"
       iconDd.appendChild(iconImg)
     })
     // Creating the dt tag.
@@ -74,7 +73,7 @@ class ProjectData {
   }
 }
 
-export function projectData(
+export function handleProjectData(
   title,
   imgPath,
   durationLink,

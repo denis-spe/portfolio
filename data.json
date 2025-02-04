@@ -11,12 +11,23 @@
       ]
   },
   {
-  "title": "AdventOfCode",
+  "title": "Advent of Code",
   "imgPath": "./images/advent.png",
   "durationLink": "https://github.com/denis-spe/portfolio",
   "description": "Solving 2015 advent of code puzzle using java",
   "iconsPath": [
         "./images/fontawesome-free-6.5.1-web/svgs/brands/java.svg"
       ]
+ },
+ 
+ {
+   "title": "Money usage",
+   "imgPath": "./images/android.svg",
+   "durationLink": "https://github.com/denis-spe/Money-Usage",
+   "description": "Track how spend and how you earned with money usage app",
+   "iconsPath": [
+     "./images/kotlin.svg",
+     "./images/fontawesome-free-6.5.1-web/svgs/brands/java.svg"
+     ]
  }
 ]

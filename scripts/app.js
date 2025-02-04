@@ -1,44 +1,8 @@
-import { projectData } from './projectData.js';
+import { handleProjectData } from './projectData.js';
+import { Dataclass } from './dataclass.js'
+import { intersection } from './intersection.js'
 
-
-let { log } = console
-
-class Dataclass {
-  // Get the open and close button
-  static menuBtn = document.querySelector("#menu-btn");
-
-  // Get the aside tag
-  static aside = document.querySelector("aside");
-
-  // Header tag
-  static header = document.querySelector("header");
-
-  // Main title
-  static mainTitle = document.querySelector(".header-title-container");
-
-  // Aside contents
-  static asideContents = document.querySelector(".aside-contents");
-  static praise = document.querySelector(".praise"); // In aside
-
-  // Design container
-  static designContainer = document.querySelector(".design-container");
-}
-
-
-/**
- * Animate the list element
- */
-function animateLi(element, delay, dur) {
-  element.style = `
-  animation-name: animate-li-element;
-  animation-timing-function: ease;
-  animation-duration: ${dur}ms;
-  animation-fill-mode: forwards;
-  animation-delay: ${delay}ms;
-  `;
-}
-
-class App {
+export class App {
   // Constructor
   constructor() {
     var context = this;
@@ -48,7 +12,20 @@ class App {
       context.background();
       context.fields();
       context.addProjectItems()
+      intersection()
     });
+  }
+  /**
+   * Animate the list element
+   */
+  animateLi(element, delay, dur) {
+    element.style = `
+  animation-name: animate-li-element;
+  animation-timing-function: ease;
+  animation-duration: ${dur}ms;
+  animation-fill-mode: forwards;
+  animation-delay: ${delay}ms;
+  `;
   }
 
   openAsideMenu() {
@@ -58,8 +35,8 @@ class App {
     `;
     const li = document.querySelectorAll("aside li");
     li.forEach((item, index) => {
-      if (index == 0) animateLi(item, (index + 0.2) * 100, index * 20);
-      else animateLi(item, index * 100, index * 20);
+      if (index == 0) this.animateLi(item, (index + 0.2) * 100, index * 20);
+      else this.animateLi(item, index * 100, index * 20);
     });
 
     // Hide the main title
@@ -226,7 +203,7 @@ class App {
       .then(reponse => reponse.json())
       .then(data => {
         data.forEach(it => {
-          projectData(
+          handleProjectData(
             it["title"],
             it["imgPath"],
             it["durationLink"],
@@ -237,6 +214,3 @@ class App {
       })
   }
 }
-
-// Calling the App object
-new App();

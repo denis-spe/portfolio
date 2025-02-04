@@ -259,11 +259,11 @@ main{
 }
 
 .inner-pro-container dd img {
-  margin: 1px;
+  margin: 2px;
 }
 
 .inner-pro-container dt figure{
-  width: 10px;
+  width: 100%;
   margin: 15px 0px 5px;
   display: flex;
   flex-flow: column;
@@ -282,8 +282,12 @@ main{
   margin-top: 6px;
 }
 
+.icons-dd img {
+  width: 12px;
+}
+
 .inner-pro-container .icons-dd{
-  margin: 8px 0px;
+  margin: 5px 0px;
   align-items: center;
 }
 
