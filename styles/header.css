@@ -23,6 +23,18 @@ header {
   font-family: var(--title-font-family);
 }
 
+.header-title-container #title-seperator, 
+#sub-title {
+  display: none;
+  font-weight: normal;
+  font-size: 15px;
+  position: relative;
+  bottom: 4px;
+}
+
+#sub-title {
+  top: -1px;
+}
 
 .menu-btn-container{
   -webkit-tap-highlight-color: transparent;

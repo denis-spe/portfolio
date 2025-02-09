@@ -294,6 +294,7 @@ main{
 .pro-title-container h2{
   font-weight: 200;
   margin-bottom: 8px;
+  font-family: var(--title-font-family);
 }
 
 .pro-content-container{
