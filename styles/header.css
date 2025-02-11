@@ -25,11 +25,12 @@ header {
 
 .header-title-container #title-seperator, 
 #sub-title {
-  display: none;
   font-weight: normal;
   font-size: 15px;
   position: relative;
   bottom: 4px;
+  font-family: var(--sub-title-font-family);
+  font-weight: var(--sub-title-font-weight);
 }
 
 #sub-title {

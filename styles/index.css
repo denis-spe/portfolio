@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import url('header.css');
 @import url('aside.css');
 @import url('main.css');
@@ -13,6 +15,8 @@
     --primary-font-size: 18px;
     --primary-font-family: "Poppins", sans-serif;
     --title-font-family: "Comfortaa", sans-serif;
+    --sub-title-font-family: "Roboto", serif;
+    --sub-title-font-weight: 500;
     --header-height: 10vh;
     --menu-btn-width: 40px;
     --menu-btn-height: 40px;
