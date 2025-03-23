@@ -1,33 +1,53 @@
-[
-  {
-    "title": "Portfolio",
-    "imgPath": "./images/logo.svg",
-    "durationLink": "https://github.com/denis-spe/portfolio",
-    "description": "A static website using only html, css and javascript",
-    "iconsPath": [
+{
+  "introduction": {
+    "contact-brand": [
+      "/images/fontawesome-free-6.5.1-web/svgs/brands/facebook.svg",
+      "/images/fontawesome-free-6.5.1-web/svgs/brands/instagram.svg",
+      "/images/fontawesome-free-6.5.1-web/svgs/brands/google.svg"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Portfolio",
+      "imgPath": "./images/logo.svg",
+      "durationLink": "https://github.com/denis-spe/portfolio",
+      "description": "A static website using only html, css and javascript",
+      "iconsPath": [
         "./images/fontawesome-free-6.5.1-web/svgs/brands/html5.svg",
         "./images/fontawesome-free-6.5.1-web/svgs/brands/css3.svg",
         "./images/fontawesome-free-6.5.1-web/svgs/brands/js.svg"
       ]
-  },
-  {
-  "title": "Advent of Code",
-  "imgPath": "./images/advent.png",
-  "durationLink": "https://github.com/denis-spe/portfolio",
-  "description": "Solving 2015 advent of code puzzle using java",
-  "iconsPath": [
+    },
+    {
+      "title": "Advent of Code",
+      "imgPath": "./images/advent.png",
+      "durationLink": "https://github.com/denis-spe/portfolio",
+      "description": "Solving 2015 advent of code puzzle using java",
+      "iconsPath": [
         "./images/fontawesome-free-6.5.1-web/svgs/brands/java.svg"
       ]
- },
- 
- {
-   "title": "Money usage",
-   "imgPath": "./images/android.svg",
-   "durationLink": "https://github.com/denis-spe/Money-Usage",
-   "description": "Track how spend and how you earned with money usage app",
-   "iconsPath": [
-     "./images/kotlin.svg",
-     "./images/fontawesome-free-6.5.1-web/svgs/brands/java.svg"
-     ]
- }
-]
+    },
+    
+    {
+      "title": "Money usage",
+      "imgPath": "./images/android.svg",
+      "durationLink": "https://github.com/denis-spe/Money-Usage",
+      "description": "Track how spend and how you earned with money usage app",
+      "iconsPath": [
+        "./images/kotlin.svg",
+        "./images/fontawesome-free-6.5.1-web/svgs/brands/java.svg"
+      ]
+    },
+    
+    {
+      "title": "Exttorch",
+      "imgPath": "./images/android.svg",
+      "durationLink": "https://github.com/denis-spe/exttorch",
+      "description": "Implementing a deep learning model framework using torch",
+      "iconsPath": [
+        "./images/kotlin.svg",
+        "./images/fontawesome-free-6.5.1-web/svgs/brands/java.svg"
+      ]
+    }
+  ]
+}

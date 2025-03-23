@@ -5,10 +5,12 @@ const innerObserverCallback = (entries, observer) => {
     /*entry.target.classList.add("inner-pro-container-hide")*/
     
     if (entry.isIntersecting) {
-      entry.target.classList.add("inner-pro-container-display")
+      if (entry.intersectionRatio >= 0.4) {
+        entry.target.classList.add("inner-pro-container-display")
+      }
     }
     
-    if (!entry.isIntersecting) {
+    else {
       entry.target.classList.remove("inner-pro-container-display")
       entry.target.classList.add("inner-pro-container-hide")
     }
@@ -35,7 +37,7 @@ function proContents() {
     targets.forEach(it => observer.observe(it))
   }, outerOption)
   
-  outerObserver.observe(document.querySelector(".project-section"))
+  outerObserver.observe(document.querySelector("#project-section"))
 }
 
 function proIntersection(entry, seperator, subTile) {
@@ -99,7 +101,7 @@ export function intersection() {
   
   const observer = new IntersectionObserver(callback, options);
   
-  const target = document.querySelector(".project-section");
+  const target = document.querySelector("#project-section");
   
   observer.observe(target)
   
