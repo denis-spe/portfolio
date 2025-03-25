@@ -202,6 +202,67 @@ main {
   border-radius: 50px;
 }
 
+.arrow-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+  position: relative;
+  top: 190px;
+}
+
+.arrow-inner-container {
+  margin: auto;
+}
+
+
+.right-line, .left-line{
+  background: white;
+  width: 2px;
+  height: 13px;
+  display: inline-block;
+}
+
+.right-line {
+  transform: rotate(50deg);
+  position: relative;
+  left: 1px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.left-line {
+  transform: rotate(-50deg);
+  position: relative;
+  right: 1px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.arrow-1 {
+  position: relative;
+  animation: bounce 0.5s ease-in-out 100ms alternate infinite;
+}
+
+.arrow-2 {
+  position: relative;
+  bottom: 25px;
+  animation: bounce 0.5s ease-in-out 150ms alternate infinite;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  
+  100% {
+    transform: translateY(10px);
+  }
+}
+
 /*
 * ====== Project section =====
 */

@@ -16,6 +16,7 @@ export class App {
       intersection();
     });
   }
+  
   /**
    * Animate the list element
    */
@@ -120,9 +121,9 @@ export class App {
     }
   }
   
-  menuItmHyperlink(sectionId){
+  menuItmHyperlink(sectionId) {
     document.querySelector(sectionId).scrollIntoView({
-        behavior: 'smooth'
+      behavior: 'smooth'
     })
   }
   
