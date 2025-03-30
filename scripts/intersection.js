@@ -30,7 +30,7 @@ function proContents() {
       threshold: 0.4,
     };
     
-    const targets = document.querySelectorAll(".inner-pro-container")
+    const targets = document.querySelectorAll(".inner-pro-container, .pro-title-container")
     
     const observer = new IntersectionObserver(innerObserverCallback, options);
     
@@ -64,6 +64,37 @@ function proIntersection(entry, seperator, subTile) {
     subTile.classList.remove("show")
     subTile.classList.add("hide")
   }
+}
+
+export function arrowIntersection() {
+  const callback = (entries, observer) => {
+    
+    // Fetch the arrow-contain class
+    const arrows = document.querySelectorAll('.arrow-container .arrow-inner-container');
+    
+    entries.forEach(entry => {
+        arrows.forEach(arrow => {
+          if (entry.isIntersecting) {
+            arrow.classList.remove('hide-arrow')
+          } else {
+            arrow.classList.add('hide-arrow')
+            
+          }
+        })
+    })
+}
+
+const options = {
+  root: null,
+  rootMargin: "30px",
+  threshold: 1.0
+}
+
+const observer = new IntersectionObserver(callback, options);
+
+const target = document.querySelector("#intro-section");
+
+observer.observe(target)
 }
 
 export function intersection() {

@@ -263,6 +263,29 @@ main {
   }
 }
 
+.arrow-container
+
+.hide-arrow {
+  animation: animate-hide-arrow 0.5s ease-out 200ms alternate forwards;
+}
+
+@keyframes animate-hide-arrow{
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  50% {
+    opacity: 0.5;
+    transform: translateY(13px);
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+}
+
 /*
 * ====== Project section =====
 */

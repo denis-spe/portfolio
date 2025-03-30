@@ -1,5 +1,5 @@
 import { Dataclass } from './dataclass.js'
-import { intersection } from './intersection.js'
+import { intersection, arrowIntersection } from './intersection.js'
 import { dataPreprocessing } from './handleData.js'
 
 export class App {
@@ -13,9 +13,12 @@ export class App {
       context.background();
       context.fields();
       dataPreprocessing();
+      arrowIntersection();
       intersection();
     });
   }
+  
+  
   
   /**
    * Animate the list element
