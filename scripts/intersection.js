@@ -86,8 +86,8 @@ export function arrowIntersection() {
 
 const options = {
   root: null,
-  rootMargin: "30px",
-  threshold: 1.0
+  rootMargin: "50px 0px",
+  threshold: 0.9
 }
 
 const observer = new IntersectionObserver(callback, options);

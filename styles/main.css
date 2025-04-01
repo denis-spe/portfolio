@@ -204,7 +204,7 @@ main {
 
 .arrow-container {
   width: 40px;
-  height: 40px;
+  height: 60px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -215,40 +215,19 @@ main {
 
 .arrow-inner-container {
   margin: auto;
+  height: 20px;
 }
 
-
-.right-line, .left-line{
-  background: white;
-  width: 2px;
-  height: 13px;
-  display: inline-block;
-}
-
-.right-line {
-  transform: rotate(50deg);
-  position: relative;
-  left: 1px;
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
-}
-
-.left-line {
-  transform: rotate(-50deg);
-  position: relative;
-  right: 1px;
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
-}
 
 .arrow-1 {
   position: relative;
+  top: 9px;
   animation: bounce 0.5s ease-in-out 100ms alternate infinite;
 }
 
 .arrow-2 {
   position: relative;
-  bottom: 25px;
+  bottom: 9px;
   animation: bounce 0.5s ease-in-out 150ms alternate infinite;
 }
 
@@ -263,13 +242,12 @@ main {
   }
 }
 
-.arrow-container
 
 .hide-arrow {
   animation: animate-hide-arrow 0.5s ease-out 200ms alternate forwards;
 }
 
-@keyframes animate-hide-arrow{
+@keyframes animate-hide-arrow {
   0% {
     opacity: 1;
     transform: translateY(0);
