@@ -17,7 +17,7 @@ main {
 
 .intro-section {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   color: #fff;
 }
 
@@ -79,13 +79,13 @@ main {
   left: 0;
   font-weight: 480;
   font-size: 1.2em;
-  font-family: "Roboto" "Poppins" sans-serif;
+  font-family: "Roboto", "Poppins", sans-serif;
   padding-left: 8px;
 }
 
 
 .intro-contents #hi {
-  font-family: var(--sub-title-font-family);
+  font-family: var(--sub-title-font-family), sans-serif;
   font-weight: var(--sub-title-font-weight);
 }
 
@@ -114,7 +114,7 @@ main {
       rgba(46, 103, 255, 1),
       rgba(65, 75, 186, 1)
   );*/
-  filter: blue(20px);
+  filter: blur(20px);
 }
 
 /**
@@ -188,7 +188,6 @@ main {
   margin-top: 10px;
   display: flex;
   gap: 13px;
-  display: flex;
   justify-content: center;
 }
 
@@ -202,6 +201,7 @@ main {
   border-radius: 50px;
 }
 
+/* Arrows style */
 .arrow-container {
   width: 40px;
   height: 60px;
@@ -209,8 +209,10 @@ main {
   flex-direction: column;
   align-content: center;
   margin: auto;
-  position: relative;
-  top: 190px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 66vh;
 }
 
 .arrow-inner-container {
@@ -221,13 +223,13 @@ main {
 
 .arrow-1 {
   position: relative;
-  top: 9px;
+  top: 12%;
   animation: bounce 0.5s ease-in-out 100ms alternate infinite;
 }
 
 .arrow-2 {
   position: relative;
-  bottom: 9px;
+  bottom: 20%;
   animation: bounce 0.5s ease-in-out 150ms alternate infinite;
 }
 
@@ -316,7 +318,7 @@ main {
 
 .inner-pro-container dt figure {
   width: 100%;
-  margin: 15px 0px 5px;
+  margin: 15px 0 5px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -339,21 +341,20 @@ main {
 }
 
 .inner-pro-container .icons-dd {
-  margin: 5px 0px;
+  margin: 5px 0;
   align-items: center;
 }
 
 .pro-title-container h2 {
-  font-weight: 600;
   margin-bottom: 8px;
-  font-family: var(--sub-title-font-family);
+  font-family: var(--sub-title-font-family), serif;
   font-weight: var(--sub-title-font-weight);
 }
 
 .pro-content-container {
   display: grid;
   grid-template-columns: 51% 51%;
-  grid-row: 50%;
+  grid-row: 50;
   grid-gap: 1px;
 }
 
@@ -381,7 +382,7 @@ main {
 
 .inner-pro-container-display {
   position: relative;
-  top: 0%;
+  top: 0;
   opacity: 1;
   transition: all 1s linear 1s;
 }
