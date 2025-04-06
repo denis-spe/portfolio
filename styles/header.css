@@ -6,7 +6,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 10px 0px 10px;
+  padding: 0 10px 0 10px;
   z-index: 2;
   background: var(--header-bg);
   -webkit-backdrop-filter: var(--header-blur);
@@ -20,16 +20,26 @@ header {
 }
 
 .header-title-container h1{
-  font-family: var(--title-font-family);
+  font-family: var(--title-font-family), sans-serif;
+}
+
+#title-container{
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#title-container svg{
+  padding-top: 3px;
 }
 
 .header-title-container #title-seperator, 
 #sub-title {
-  font-weight: normal;
   font-size: 15px;
   position: relative;
   bottom: 4px;
-  font-family: var(--sub-title-font-family);
+  font-family: var(--sub-title-font-family), sans-serif;
   font-weight: var(--sub-title-font-weight);
 }
 

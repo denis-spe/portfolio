@@ -12,9 +12,23 @@ export class App {
       context.menuItems();
       context.background();
       context.fields();
+      context.drawTitle()
       dataPreprocessing();
       arrowIntersection();
       intersection();
+    });
+  }
+
+  drawTitle(){
+    const vara = new Vara("#title-container", "https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json", [{
+      text: "den",
+      fontSize: 30,
+      color: "#fff",
+      fontFamily: "Comfortaa",
+      x: 5
+    }], {
+      strokeWidth: 2,
+      textAlign: "center"
     });
   }
   

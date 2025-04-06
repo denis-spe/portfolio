@@ -5,5 +5,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="vara" level="application" />
+    <orderEntry type="library" name="62b25911ae" level="application" />
   </component>
 </module>
