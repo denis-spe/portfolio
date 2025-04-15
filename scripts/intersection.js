@@ -99,7 +99,7 @@ observer.observe(target)
 
 export function intersection() {
   const callback = (entries, observer) => {
-    const seperator = document.getElementById("title-seperator");
+    const seperator = document.getElementById("title-separator");
     const subTile = document.getElementById("sub-title");
     
     let proTitle

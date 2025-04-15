@@ -23,6 +23,8 @@ header {
   font-family: var(--title-font-family), sans-serif;
 }
 
+
+
 #title-container{
   width: 80px;
   display: flex;
@@ -30,11 +32,7 @@ header {
   align-content: center;
 }
 
-#title-container svg{
-  padding-top: 3px;
-}
-
-.header-title-container #title-seperator, 
+.header-title-container #title-separator,
 #sub-title {
   font-size: 15px;
   position: relative;
