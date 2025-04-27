@@ -6,9 +6,10 @@ new App();
 
 window.addEventListener("load", () => {
     const loading = document.querySelector("#loading")
+
     loading.classList.add(".fade-out")
 
     setTimeout(() => {
-        loading.style.display = "none"
+        // loading.style.display = "none"
     }, 600)
 })
