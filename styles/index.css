@@ -108,7 +108,6 @@ body{
 .loader {
     width: 100px;
     height: 100px;
-    background: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,9 +119,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #eeeeee;
     border-radius: 50px;
-    /*animation: rotate-circle 1s linear 10s infinite;*/
+    animation: rotate-circle 1s linear 3000ms infinite;
 }
 
 @keyframes rotate-circle {
@@ -145,35 +143,57 @@ body{
 }
 
 .loader .circle-1 {
-    /*animation: circle-animate-1 250ms ease 50ms alternate-reverse infinite;*/
+    background: rgb(23, 40, 236);
+    animation: bounce 280ms linear 0s 10 alternate;
 }
 
 .loader .circle-2 {
-    /*animation: circles-animate-1 251ms ease 50ms alternate-reverse infinite;*/
-    /*transform: translateY(10px) translateX(-5px);*/
-    /*animation: move-circle 1ms linear forwards;*/
+    background: rgb(249, 249, 251);
+    animation: move-circle-2 1ms linear 0ms forwards, bounce 300ms linear 0s 10 alternate;
 }
 
 .loader .circle-3 {
-    /*animation: circles-animate-1 252ms ease 50ms alternate-reverse infinite;*/
-    /*transform: translateY(15px) translateX(-5px);*/
+    background: rgb(24, 170, 74);
+    animation: move-circle-3 1ms linear 0ms forwards, bounce 320ms linear 0s 10 alternate;
 }
 
 .loader .circle-4 {
-    /*animation: circles-animate-1 253ms ease 50ms alternate-reverse infinite;*/
-    /*animation: move-circle 1ms linear forwards;*/
+    background: rgb(244, 14, 6);
+    animation: move-circle-4 1ms linear 0ms forwards, bounce 340ms linear 0s 10 alternate;
 }
 
-@keyframes circles-animate-1 {
+@keyframes bounce {
     0% {
         transform: translateY(0px);
     }
+
     100% {
         transform: translateY(5px);
     }
 }
 
-@keyframes move-circle {
+@keyframes move-circle-2 {
+    0% {
+        transform: translateY(0px) translateX(0px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(10px) translateX(-6px);
+    }
+}
+
+@keyframes move-circle-3 {
+    0%{
+        transform: translateY(0px) translateX(0px);
+    }
+
+    100%{
+        transform: translateY(15px) translateX(-5px);
+    }
+}
+
+@keyframes move-circle-4 {
     0%{
         transform: translateY(0px) translateX(0px);
     }

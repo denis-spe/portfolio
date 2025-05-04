@@ -10,6 +10,6 @@ window.addEventListener("load", () => {
     loading.classList.add(".fade-out")
 
     setTimeout(() => {
-        // loading.style.display = "none"
+        loading.style.display = "none"
     }, 600)
 })

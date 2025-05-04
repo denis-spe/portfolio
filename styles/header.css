@@ -22,7 +22,33 @@ header {
 .header-title-container h1{
   font-family: var(--title-font-family), sans-serif;
 }
+#d{
+  transform: rotate(-30deg);
+  display: inline-block;
+  animation: normal-rotate 1s linear 0.5s forwards;
+}
 
+#e{
+  transform: rotate(-30deg);
+  display: inline-block;
+  animation: normal-rotate 1s linear 0.5s forwards;
+}
+
+#n{
+  transform: rotate(-30deg);
+  display: inline-block;
+  animation: normal-rotate 1s linear 0.5s forwards;
+}
+
+@keyframes normal-rotate {
+  0%{
+    transform: rotate(-30deg);
+  }
+
+  100%{
+    transform: rotate(0deg);
+  }
+}
 
 
 #title-container{
