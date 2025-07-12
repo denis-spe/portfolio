@@ -7,7 +7,7 @@
 @import url('footer.css');
 
 /* Global variables */
-:root{
+:root {
     --primary-bg-color: #FAF6F6 !important;
     --secondary-bg-color: #020100 !important;
     --primary-color: #fff !important;
@@ -23,11 +23,12 @@
     --menu-btn-line-width: 20px;
     --menu-btn-line-height: 2px;
     --menu-btn-line-bg: #fff;
+    --global-left-padding: 18px;
     --aside-bg: linear-gradient(
-      to top right,
-      rgba(70, 122, 248, 1),
-      rgba(46, 103, 255, 1),
-      rgba(65, 75, 186, 1)
+            to top right,
+            rgba(70, 122, 248, 1),
+            rgba(46, 103, 255, 1),
+            rgba(65, 75, 186, 1)
     );
     --aside-blur: blur(50px);
     --header-bg: none;
@@ -35,9 +36,9 @@
 }
 
 /* Change defaults */
-*, 
-::before, 
-::after{
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,10 +46,8 @@
 }
 
 
-
-
 /* Style the body tag */
-body{
+body {
     background: var(--primary-bg-color) !important;
     font-size: var(--primary-font-size);
     font-family: var(--primary-font-family);
@@ -57,26 +56,27 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: red;  /*Optional: just make scrollbar invisible */
+    width: 0; /* Remove scrollbar space */
+    background: red; /*Optional: just make scrollbar invisible */
 }
+
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
 
-::-webkit-scrollbar-corner{
+::-webkit-scrollbar-corner {
     background-color: #202020;
 }
 
 
 @media (prefers-color-scheme: dark) {
     :root {
-    --primary-bg-color: #1F2223;
-    --secondary-bg-color: #FAF6F6;
-    --primary-color: #fff;
-    --secondary-color: #000;
-    --menu-btn-line-bg: #fff !important;
+        --primary-bg-color: #1F2223;
+        --secondary-bg-color: #FAF6F6;
+        --primary-color: #fff;
+        --secondary-color: #000;
+        --menu-btn-line-bg: #fff !important;
     }
 
     #logo {
@@ -88,10 +88,8 @@ body{
     width: 100%;
     height: 100vh;
     position: absolute;
-    background: linear-gradient(to top right,
-    rgba(70, 122, 248, 1),
-    rgba(46, 103, 255, 1),
-    rgba(65, 75, 186, 0.7));
+    background: rgba(62, 61, 61, 0.47);
+    backdrop-filter: blur(5px);
     opacity: 1;
     z-index: 99999;
     transition: opacity 0.6s ease;
@@ -114,8 +112,8 @@ body{
 }
 
 .circle {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +141,7 @@ body{
 }
 
 .loader .circle-1 {
-    background: rgb(23, 40, 236);
+    background: rgb(249, 249, 251);
     animation: bounce 280ms linear 0s 10 alternate;
 }
 
@@ -153,12 +151,12 @@ body{
 }
 
 .loader .circle-3 {
-    background: rgb(24, 170, 74);
+    background: rgb(249, 249, 251);
     animation: move-circle-3 1ms linear 0ms forwards, bounce 320ms linear 0s 10 alternate;
 }
 
 .loader .circle-4 {
-    background: rgb(244, 14, 6);
+    background: rgb(249, 249, 251);
     animation: move-circle-4 1ms linear 0ms forwards, bounce 340ms linear 0s 10 alternate;
 }
 
@@ -168,7 +166,7 @@ body{
     }
 
     100% {
-        transform: translateY(5px);
+        transform: translateY(9px);
     }
 }
 
@@ -177,28 +175,28 @@ body{
         transform: translateY(0px) translateX(0px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translateY(10px) translateX(-6px);
     }
 }
 
 @keyframes move-circle-3 {
-    0%{
+    0% {
         transform: translateY(0px) translateX(0px);
     }
 
-    100%{
+    100% {
         transform: translateY(15px) translateX(-5px);
     }
 }
 
 @keyframes move-circle-4 {
-    0%{
+    0% {
         transform: translateY(0px) translateX(0px);
     }
 
-    100%{
+    100% {
         transform: translateY(10px) translateX(-5px);
     }
 }
