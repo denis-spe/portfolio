@@ -1,0 +1,50 @@
+/* Bless the you oh our LORD GOD */
+/* Responsive styles for screen queries */
+
+/* Smaller devices (phones, 280px and 328) */
+@media (min-width: 280px) and (max-width: 328px) {
+  .aside-contents {
+    font-size: 20px;
+  }
+
+ .intro-contents {
+    font-size: 13px;
+  }
+
+  .arrow-container {
+    top: 62vh;
+  }
+
+}
+
+/* Small devices (phones, 360px and 480px and max height of 7000px) */
+@media (min-width: 328px) and (max-width: 480px) {
+  .aside-contents {
+    font-size: 20px;
+  }
+
+ .intro-contents {
+    font-size: 16px;
+  }
+
+  .arrow-container {
+    top: 62vh;
+  }
+
+}
+
+/* Small devices (phones, 360px and 480px) */
+@media (min-width: 328px) and (max-width: 480px) and (min-height: 700px) and (max-height: 930px) {
+  .aside-contents {
+    font-size: 20px;
+  }
+
+ .intro-contents {
+    font-size: 19px;
+  }
+
+  .arrow-container {
+    top: 66vh;
+  }
+
+}
