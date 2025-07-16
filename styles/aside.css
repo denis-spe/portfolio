@@ -59,7 +59,7 @@ aside{
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-  font-size: 35px;
+  font-size: 8vw;
 }
 
 .aside-contents > ul {
@@ -119,7 +119,7 @@ aside{
 }
 
 .praise p{
-  font-size: 15px;
+  font-size: 5vw;
   font-family: "Caveat", cursive;
   color: gold;
   overflow: hidden;
