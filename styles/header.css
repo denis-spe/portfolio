@@ -24,7 +24,7 @@ header {
 
 .header-title-container h1 {
     font-family: var(--title-font-family), sans-serif;
-    font-size: 9vw;
+    font-size: 28px;
 }
 
 
