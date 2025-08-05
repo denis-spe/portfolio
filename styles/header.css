@@ -152,3 +152,18 @@ header {
         transform: rotateZ(360deg);
     }
 }
+
+.nav-container > ul {
+    display: flex;
+    list-style: none;
+    width: 50vh;
+    justify-content: end;
+    font-size: 15px;
+}
+
+.nav-container > ul > li {
+    cursor: pointer;
+    margin-right: 20px;
+    font-family: var(--title-font-family), serif
+}
+

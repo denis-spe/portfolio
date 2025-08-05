@@ -1,213 +1,213 @@
-aside{
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  position: absolute;
-  margin: auto;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 0;
-  display: none;
-  z-index: 1;
-  background: var(--aside-bg);
-  /*
-  background: linear-gradient(
-      to top right,
-      rgba(70, 122, 248, 1),
-      rgba(46, 103, 255, 1),
-      rgba(65, 75, 186, 1)
-  );
-  -webkit-backdrop-filter: var(--aside-blur); 
-  backdrop-filter: var(--aside-blur); */
+aside {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    z-index: 1;
+    background: var(--aside-bg);
+    /*
+    background: linear-gradient(
+        to top right,
+        rgba(70, 122, 248, 1),
+        rgba(46, 103, 255, 1),
+        rgba(65, 75, 186, 1)
+    );
+    -webkit-backdrop-filter: var(--aside-blur);
+    backdrop-filter: var(--aside-blur); */
 }
 
 /**
 * Animate the aside element when opening
 */
-.open-aside{
-  display: block;
-  position: fixed;
-  animation-name: animate-open-aside;
-  animation-timing-function: ease;
-  animation-duration: 30ms;
-  animation-duration: 30ms;
-  animation-fill-mode: forwards;
+.open-aside {
+    display: block;
+    position: fixed;
+    animation-name: animate-open-aside;
+    animation-timing-function: ease;
+    animation-duration: 30ms;
+    animation-duration: 30ms;
+    animation-fill-mode: forwards;
 }
 
 /**
 * Animate the aside element when closing
 */
-.close-aside{
-  display: block;
-  animation-name: animate-close-aside;
-  animation-timing-function: ease;
-  animation-delay: 10ms;
-  animation-duration: 10ms;
-  animation-fill-mode: forwards;
+.close-aside {
+    display: block;
+    animation-name: animate-close-aside;
+    animation-timing-function: ease;
+    animation-delay: 10ms;
+    animation-duration: 10ms;
+    animation-fill-mode: forwards;
 }
 
-.aside-contents{
-  /* background: red; */
-  width: 80%;
-  height: 50vh;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  font-size: 8vw;
+.aside-contents {
+    /* background: red; */
+    width: 80%;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 8vw;
 }
 
 .aside-contents > ul {
-  list-style: none;
+    list-style: none;
 }
 
 .aside-contents > ul li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.aside-contents > ul p{
-  text-decoration: none;
-  font-family: var(--title-font-family);
-  font-weight: bolder;
+.aside-contents > ul p {
+    text-decoration: none;
+    font-family: var(--title-font-family), serif;
+    font-weight: bolder;
 }
 
-.aside-contents > ul p::after{
-  content: "";
-  height: 0.1em;
-  background: var(--primary-color);
-  display: block;
-  width: 40%;
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
+.aside-contents > ul p::after {
+    content: "";
+    height: 0.1em;
+    background: var(--primary-color);
+    display: block;
+    width: 40%;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
 }
 
 .aside-contents > ul p:hover::after,
 .aside-contents > ul p:focus::after {
-  opacity: 1;
-  transform: translate3d(0, 0.2em, 0);
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
 }
 
 .aside-contents > ul li p::after {
-  opacity: 1;
-  transform: scale(0);
-  transform-origin: center;
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
 }
 
 .aside-contents > ul li p:hover::after,
-.aside-contents > ul li p:focus::after{
-  transform: scale(1);
+.aside-contents > ul li p:focus::after {
+    transform: scale(1);
 }
 
 
-.praise{
-  width: 100%;
-  height: 10vh;
-  position: absolute;
-  bottom: 0px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  z-index: 3;
-  display: none;
-  justify-content: center;
-  align-items: center;
+.praise {
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 3;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.praise p{
-  font-size: 5vw;
-  font-family: "Caveat", cursive;
-  color: gold;
-  overflow: hidden;
-  text-align: center;
-  white-space: nowrap;
-  width: 0;
-  animation-name: typing;
-  animation-duration: 1.5s;
-  animation-timing-function: steps(30, end);
-  animation-fill-mode: forwards;
+.praise p {
+    font-size: 5vw;
+    font-family: "Caveat", cursive;
+    color: gold;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    width: 0;
+    animation-name: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
 }
 
 /* Animation Praise text */
-@keyframes typing{
-  0%{
-    width: 0%;
-  }
-  
-  100%{
-    width: 100%;
-  }
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
-.praise #holy-word{
-  stroke-dasharray: 1018;
+.praise #holy-word {
+    stroke-dasharray: 1018;
     stroke-dashoffset: 10;
-  
+
 }
 
 @keyframes dash {
-  to {
-    stroke-dasharray: 1018.9398193359375;
-    stroke-dashoffset: 1000;
-  }
+    to {
+        stroke-dasharray: 1018.9398193359375;
+        stroke-dashoffset: 1000;
+    }
 }
 
 @keyframes animate-li-element {
-    0%{
-      transform: translateX(0%);
+    0% {
+        transform: translateX(0%);
     }
 
-    100%{
-      transform: translateX(40%);
+    100% {
+        transform: translateX(40%);
     }
 }
 
 
 @keyframes animate-open-aside {
-  0%{
-    border-radius: 50%;
-    width: 0px;
-    height: 0px;
-  }
-  
-  50% {
-    border-radius: 50%;
-    width: 50%;
-    height: 25vh;
-  }
-  
-  100% {
-    border-radius: 0%;
-    width: 100%;
-    height: 100vh;
-  }
+    0% {
+        border-radius: 50%;
+        width: 0px;
+        height: 0px;
+    }
+
+    50% {
+        border-radius: 50%;
+        width: 50%;
+        height: 25vh;
+    }
+
+    100% {
+        border-radius: 0%;
+        width: 100%;
+        height: 100vh;
+    }
 }
 
 
 @keyframes animate-close-aside {
-  
-  0% {
-    border-radius: 0%;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-  }
-  
-  50% {
-    border-radius: 50%;
-    width: 50%;
-    height: 25vh;
-  }
-  
-  100%{
-    border-radius: 50%;
-    width: 0%;
-    height: 0vh;
-    display: none
-  }
+
+    0% {
+        border-radius: 0%;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+    }
+
+    50% {
+        border-radius: 50%;
+        width: 50%;
+        height: 25vh;
+    }
+
+    100% {
+        border-radius: 50%;
+        width: 0%;
+        height: 0vh;
+        display: none
+    }
 }
 
