@@ -31,7 +31,6 @@ aside {
     animation-name: animate-open-aside;
     animation-timing-function: ease;
     animation-duration: 30ms;
-    animation-duration: 30ms;
     animation-fill-mode: forwards;
 }
 

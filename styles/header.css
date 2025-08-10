@@ -164,6 +164,33 @@ header {
 .nav-container > ul > li {
     cursor: pointer;
     margin-right: 20px;
-    font-family: var(--title-font-family), serif
+    width: 32px;
+    height: 32px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 50px;
 }
+
+
+.nav-container > ul > li > img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container > ul > li > img:hover {
+    width: 24px;
+    height: 24px;
+}
+
+
+
 

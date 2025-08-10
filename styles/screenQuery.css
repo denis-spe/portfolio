@@ -29,6 +29,10 @@
         display: none;
     }
 
+    .open-aside {
+        display: none;
+    }
+
     .inner-intro-contents-container {
         display: flex;
         flex-direction: column;
@@ -65,6 +69,10 @@
         display: none;
     }
 
+    .open-aside {
+        display: none;
+    }
+
     .inner-intro-contents-container {
         display: flex;
         flex-direction: column;
@@ -93,6 +101,10 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .menu-btn-container {
+        display: none;
+    }
+
+    .open-aside {
         display: none;
     }
 
