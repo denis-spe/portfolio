@@ -132,39 +132,3 @@
         order: 1;
     }
 }
-
-/* Extra large devices (large desktops, 1200px and up) */
-/*@media (min-width: 1200px) {*/
-/*    .menu-btn-container {*/
-/*        display: none;*/
-/*    }*/
-
-/*    .inner-intro-contents-container {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        gap: 50px;*/
-/*    }*/
-
-/*    .intro-contents {*/
-/*        font-size: 1.5rem;*/
-/*        padding-left: 0;*/
-/*    }*/
-
-/*    #hi {*/
-/*        font-size: 10vw;*/
-/*    }*/
-
-/*    .contents {*/
-/*        text-align: center;*/
-/*        order: -1;*/
-/*    }*/
-
-/*    .contact-brand {*/
-/*        width: 100%;*/
-/*        flex-direction: row;*/
-/*        justify-content: center;*/
-/*        align-items: center;*/
-/*        gap: 50px;*/
-/*        order: 1;*/
-/*    }*/
-/*}*/
