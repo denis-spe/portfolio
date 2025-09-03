@@ -50,7 +50,6 @@ function proIntersection(entry, subTile) {
 
         subTile.classList.remove("hide")
         subTile.classList.add("show")
-        console.log("Hi")
     } else {
         const proH2 = document.querySelector(".pro-title-container h2")
         proH2.classList.remove("hide")
@@ -99,23 +98,23 @@ export function intersection() {
 
         let proTitle
 
-        entries.forEach((entry) => {
-            // Each entry describes an intersection change for one observed
-            // target element:
-            //   entry.boundingClientRect
-            //   entry.intersectionRatio
-            //   entry.intersectionRect
-            //   entry.isIntersecting
-            //   entry.rootBounds
-            //   entry.target
-            //   entry.time
-
-            proIntersection(
-                entry,
-                subTile
-            )
-        });
-        subTile.textContent = text
+        // entries.forEach((entry) => {
+        //     // Each entry describes an intersection change for one observed
+        //     // target element:
+        //     //   entry.boundingClientRect
+        //     //   entry.intersectionRatio
+        //     //   entry.intersectionRect
+        //     //   entry.isIntersecting
+        //     //   entry.rootBounds
+        //     //   entry.target
+        //     //   entry.time
+        //
+        //     // proIntersection(
+        //     //     entry,
+        //     //     subTile
+        //     // )
+        // });
+        // subTile.textContent = text
     };
 
     const options = {

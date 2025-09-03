@@ -86,6 +86,12 @@ main {
     width: 100%;
 }
 
+.contents p {
+    opacity: 0;
+    transform: translateX(0%);
+    animation: move-hi 0.9s linear 0.2s forwards;
+}
+
 
 .inner-intro-contents-container {
     display: flex;
@@ -95,7 +101,22 @@ main {
 .intro-contents #hi {
     font-family: var(--sub-title-font-family), sans-serif;
     font-weight: var(--sub-title-font-weight);
+    transform: translateX(0%);
+    animation: move-hi 0.9s linear 0.1s backwards;
 }
+
+@keyframes move-hi {
+    0% {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
 
 .intro-contents p {
     color: #fff;
@@ -309,6 +330,10 @@ main {
     width: 90vw;
     height: 80%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .pro-content-container a {
@@ -318,20 +343,39 @@ main {
 }
 
 .inner-pro-container {
+    perspective: 1100px;
     padding-bottom: 12px;
+    transform-style: preserve-3d;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 50%;
+    height: 35vh;
 }
 
 .inner-pro-container dl {
-    width: 88%;
+    width: 200px;
     height: 200px;
     display: flex;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: -30px 4px 30px rgba(0, 0, 0, 0.55);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     align-items: center;
     border-radius: 15px;
+    transform: rotateY(40deg);
+    perspective: 500px;
+    margin-right: -60px;
+
+
+}
+
+.inner-pro-container dl:hover {
+    transform: rotateY(0deg);
+    position: relative;
+    transition: transform 0.6s linear 0.2s, margin-right 0.2s linear 0.2s;
+    margin-right: 50px;
 }
 
 .inner-pro-container dd {
@@ -383,10 +427,11 @@ main {
 }
 
 .pro-content-container {
-    display: grid;
-    grid-template-columns: 51% 51%;
-    grid-row: 50;
-    grid-gap: 1px;
+    /*display: grid;*/
+    /*grid-template-columns: 51% 51%;*/
+    /*grid-row: 50;*/
+    /*grid-gap: 1px;*/
+    display: flex;
 }
 
 

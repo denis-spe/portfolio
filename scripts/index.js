@@ -16,6 +16,10 @@ window.addEventListener("load", () => {
         loading.style.display = "none"
     }, 600)
 
+    setTimeout(function () {
+        window.scrollTo(0, 0); // Scroll to the top
+    }, 100);
+
     headerTitleContainer.classList.add("animate-title-on-start")
     menuBtnContainer.classList.add("animate-menu-btn-on-start")
     contactBrand.classList.add("animate-contact-brand-on-start")
